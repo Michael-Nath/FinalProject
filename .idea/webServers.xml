@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="daf42994-c31a-477e-8fe0-7f236d02bf15" name="lisa.stuy.edu" url="http://lisa.stuy.edu">
+        <fileTransfer host="lisa.stuy.edu" port="22" rootFolder="/home/students/2021/mnath10/public_html" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
