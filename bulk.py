@@ -13,7 +13,9 @@ def main():
         empty[i.split(",")[0]] = i.split(",")[1:]
     print("<html>")
     for key, value in empty.items():
+        if form.getvalue("Locations") in value:
         print(key, value, "<br>")
+
     print("</html")
 if form.getvalue("Press_me") == "Test":
     main()
