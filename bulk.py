@@ -6,6 +6,7 @@ cgitb.enable()
 print('Content-type: text/html\n')
 form = cgi.FieldStorage()
 def main():
+    answers = [form.getvalue("Locations"), form.getvalue("Beds"), form.getvalue("Baths")]
     empty = {}
     data = open("houses.csv", "r").read().split("\n")
     houses = data[1:]
@@ -13,9 +14,9 @@ def main():
         empty[i.split(",")[0]] = i.split(",")[1:]
     print("<html>")
     for key, value in empty.items():
-        if form.getvalue("Locations") in value:
-        print(key, value, "<br>")
-
+        if all(x in value for x in answers):
+            print(key, value, "<br>")
     print("</html")
+
 if form.getvalue("Press_me") == "Test":
     main()
