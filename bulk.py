@@ -9,7 +9,7 @@ form = cgi.FieldStorage()
 def main():
     answers = [form.getvalue("Locations"), form.getvalue("Beds"), form.getvalue("Baths")]
     empty = {}
-    data = open("houses.csv", "r").read().split("\n")
+    data = open("Sheet1.csv", "r").read().split("\n")
     houses = data[1:]
     for i in houses:
         empty[i.split(",")[0]] = i.split(",")[1:]

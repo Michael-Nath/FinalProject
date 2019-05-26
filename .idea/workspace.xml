@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcd1522c-1491-4605-bea2-d74725f9682a" name="Default Changelist" comment="Added a way to separate houses via location">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="fcd1522c-1491-4605-bea2-d74725f9682a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/bulk.py" beforeDir="false" afterPath="$PROJECT_DIR$/bulk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house.html" beforeDir="false" afterPath="$PROJECT_DIR$/house.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bulk.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+            <state relative-caret-position="168">
+              <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -35,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/house.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="296">
@@ -60,13 +58,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/base.html" />
-        <option value="$PROJECT_DIR$/bulk.py" />
         <option value="$PROJECT_DIR$/house.html" />
+        <option value="$PROJECT_DIR$/bulk.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="13" />
+    <option name="y" value="386" />
     <option name="width" value="1440" />
     <option name="height" value="820" />
   </component>
@@ -121,7 +120,7 @@
       <updated>1558783709476</updated>
       <workItem from="1558783713185" duration="5010000" />
       <workItem from="1558804263648" duration="830000" />
-      <workItem from="1558883667323" duration="744000" />
+      <workItem from="1558883667323" duration="1304000" />
     </task>
     <task id="LOCAL-00001" summary="Test Commit">
       <created>1558783770691</created>
@@ -172,14 +171,21 @@
       <option name="project" value="LOCAL" />
       <updated>1558804541932</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added more filters">
+      <created>1558884571977</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1558884571978</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6584000" />
+    <option name="totallyTimeSpent" value="7144000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="820" extended-state="6" />
+    <frame x="22" y="377" width="1440" height="820" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
@@ -214,11 +220,19 @@
     <MESSAGE value="added html" />
     <MESSAGE value="Created rudimentary site that yields house results from CSV" />
     <MESSAGE value="Added a way to separate houses via location" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a way to separate houses via location" />
+    <MESSAGE value="Added more filters" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more filters" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/RealEstate.csv" />
     <entry file="file://$PROJECT_DIR$/base.html" />
+    <entry file="file://$PROJECT_DIR$/house.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/houses.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state>
@@ -232,15 +246,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bulk.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        <state relative-caret-position="168">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
         </state>
       </provider>
     </entry>
