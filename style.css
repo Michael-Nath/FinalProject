@@ -1,0 +1,19 @@
+.buttons {
+  color: red;
+  font-size: 36px;
+}
+
+body {
+  text-align: center;
+  background-image: url('house.gif'); background-repeat:repeat;
+}
+
+#button {
+  padding-top: 10%;
+}
+
+#main {
+  background-color: palegoldenrod;
+  margin: 50px;
+  font-size: 36px;
+}
