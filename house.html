@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>StuyReal</title>
     <link rel="stylesheet" type="text/css" href="realstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="jquery.selectric.min.js"></script>
+    <link rel="stylesheet" href="selectric.css">
+    <link href="https://fonts.googleapis.com/css?family=Coiny|Josefin+Sans|Open+Sans" rel="stylesheet">
 </head>
 <body>
 <form method="get" action="bulk.py">
@@ -43,7 +47,15 @@
             <option>7</option>
         </select>
     </div>
+    <div id="SUBMIT">
     <input name="Press_me" type="submit" value="Test">
+    </div>
 </form>
+
+<script>
+    $(function() {
+        $('select').selectric();
+    });
+</script>
 </body>
 </html>
