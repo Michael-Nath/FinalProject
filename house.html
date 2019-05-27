@@ -3,38 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>StuyReal</title>
+    <link rel="stylesheet" type="text/css" href="realstyle.css">
 </head>
 <body>
 <form method="get" action="bulk.py">
-    Location
-    <select name="Locations" size="4">
-        <option>Bayside</option>
-        <option>Upper East Side</option>
-        <option>Tribeca</option>
-        <option>Staten Island</option>
-    </select>
-    Beds
-    <select name="Beds" size="7">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option>
-        <option>7</option>
-    </select>
-    Baths
-    <select name="Baths" size="7">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option>
-        <option>7</option>
-    </select>
+    <div id="Locations">
+        <h2> Location </h2>
+        <select name="Locations" size="6">
+            <option>Bayside</option>
+            <option>Upper East Side</option>
+            <option>Tribeca</option>
+            <option>Staten Island</option>
+            <option>Sunset Park</option>
+            <option>Lower East Side</option>
+        </select>
+    </div>
+    <div id="Beds">
+        <h2>Beds</h2>
+        <select name="Beds" size="7">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+        </select>
+    </div>
+
+    <div id="Baths">
+        <h2> Baths </h2>
+        <select name="Baths" size="7">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+        </select>
+    </div>
     <input name="Press_me" type="submit" value="Test">
 </form>
-HIII
 </body>
 </html>

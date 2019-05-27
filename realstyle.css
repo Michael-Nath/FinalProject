@@ -3,15 +3,20 @@
   font-size: 36px;
   font-family: "Coiny";
 }
-
-body {
+select {
+  width: 50%;
+  text-align: center;
+  font-size: 12px;
+}
+#body {
   background-image: url('house.gif'); background-repeat:repeat;
 }
 #main {
-  background-color: palegoldenrod;
+  background-color: #3b5e92;
   border: 1px solid black;
   font-family: "Coiny";
   font-size: 24px;
+  color: white;
 }
 
 
