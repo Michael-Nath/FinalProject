@@ -13,15 +13,32 @@
 <form method="get" action="bulk.py">
     <div id="Locations">
         <h2> Location </h2>
-        <select name="Locations" size="6">
+        <select name="Locations" size="11">
             <option>Bayside</option>
             <option>Upper East Side</option>
             <option>Tribeca</option>
             <option>Staten Island</option>
             <option>Sunset Park</option>
+            <option>Williamsburg</option>
+            <option>Astoria</option>
             <option>Lower East Side</option>
+            <option>Park Slope</option>
+            <option>Parkchester</option>
+            <option>Upper West Side</option>
         </select>
     </div>
+
+    <div id="Type">
+        <h2>House Types</h2>
+        <select name="Type" size="5">
+            <option>Apartment</option>
+            <option>Condo</option>
+            <option>Coop</option>
+            <option>Multi</option>
+            <option>Single</option>
+        </select>
+    </div>
+
     <div id="Beds">
         <h2>Beds</h2>
         <select name="Beds" size="7">
@@ -37,7 +54,7 @@
 
     <div id="Baths">
         <h2> Baths </h2>
-        <select name="Baths" size="7">
+        <select name="Baths" size="14">
             <option>1</option>
             <option>2</option>
             <option>3</option>
@@ -45,8 +62,21 @@
             <option>5</option>
             <option>6</option>
             <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
         </select>
+
     </div>
+
+    <div class="slidecontainer">
+        <input name="PriceRange" type="range" min="2000" max="29950000" value="50" class="slider" id="myRange">
+    </div>
+    <p> Current Price: <span id="Price"></span></p>
     <div id="SUBMIT">
     <input name="Press_me" type="submit" value="Test">
     </div>
@@ -56,6 +86,15 @@
     $(function() {
         $('select').selectric();
     });
+
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("Price");
+    output.innerHTML = slider.value; // Display the default slider value
+
+    // Update the current slider value (each time you drag the slider handle)
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+    }
 </script>
 </body>
 </html>
