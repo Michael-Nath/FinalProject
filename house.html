@@ -13,7 +13,8 @@
 <form method="get" action="bulk.py">
     <div id="Locations">
         <h2> Location </h2>
-        <select name="Locations" size="11">
+        <select name="Locations" multiple size="12">
+            <option selected>Any</option>
             <option>Bayside</option>
             <option>Upper East Side</option>
             <option>Tribeca</option>
@@ -30,7 +31,8 @@
 
     <div id="Type">
         <h2>House Types</h2>
-        <select name="Type" size="5">
+        <select name="Type" size="6">
+            <option selected>Any</option>
             <option>Apartment</option>
             <option>Condo</option>
             <option>Coop</option>
@@ -41,7 +43,8 @@
 
     <div id="Beds">
         <h2>Beds</h2>
-        <select name="Beds" size="7">
+        <select name="Beds" size="8">
+            <option selected>Any</option>
             <option>1</option>
             <option>2</option>
             <option>3</option>
@@ -54,7 +57,8 @@
 
     <div id="Baths">
         <h2> Baths </h2>
-        <select name="Baths" size="14">
+        <select name="Baths" size="15">
+            <option selected>Any</option>
             <option>1</option>
             <option>2</option>
             <option>3</option>
@@ -73,10 +77,13 @@
 
     </div>
 
-    <div class="slidecontainer">
-        <input name="PriceRange" type="range" min="2000" max="29950000" value="50" class="slider" id="myRange">
+    <!-- <div class="slidecontainer">
+        <input name="PriceRange" type="range" min="2000" max="29950000" class="slider" id="myRange" step="50">
     </div>
-    <p> Current Price: <span id="Price"></span></p>
+
+    <p> Current Price: <span id="Price"></span></p> -->
+
+
     <div id="SUBMIT">
     <input name="Press_me" type="submit" value="Test">
     </div>
