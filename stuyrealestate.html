@@ -1,0 +1,295 @@
+
+<html>
+<link rel="shortcut icon" href="http://pngimg.com/uploads/building/building_PNG25.png" />
+<title> Stuyvesant Real Estate </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: black;
+  line-height: 1.8;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9, .bgimg-10, .bgimg-11 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image  */
+.bgimg-1 {
+  background-image: url("https://fortunedotcom.files.wordpress.com/2017/10/460498148.jpg");
+  min-height: 100%;
+}
+
+/* Second image */
+.bgimg-2 {
+  background-image: url("SoccerTeam.jpg");
+  min-height: 400px;
+}
+
+/* Third image  */
+.bgimg-3 {
+  background-image: url("https://i.pinimg.com/originals/58/6b/f3/586bf3842dbe4ce3d2ea04d4b27594d2.gif");
+  min-height: 400px;
+}
+
+/* Fourth image  */
+.bgimg-4 {
+  background-image: url("https://media.giphy.com/media/xT1Ra6ihiXouzm67Dy/giphy.gif");
+  min-height: 400px;
+}
+
+/* Fifth image  */
+.bgimg-5 {
+  background-image: url("https://thumbs.gfycat.com/WeightyConsiderateKudu-size_restricted.gif");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+</style>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button"> Home </a>
+    <a href="#first" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-tint"> </i> 1st Floor </a>
+    <a href="#second" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-picture-o"> </i> 2nd Floor </a>
+    <a href="#third" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-futbol-o"> </i> 3rd Floor </a>
+    <a href="#fourth" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-line-chart"> </i> 4th Floor </a>
+    <a href="#fifth" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-cutlery"> </i> 5th Floor </a>
+    <a href="#sixth" class="w3-bar-item w3-button 3-hide-small"><i class="fa fa-book"> </i> 6th Floor </a>
+    <a href="#seventh" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-eyedropper"> </i> 7th Floor </a>
+    <a href="#eigth" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-thermometer"> </i> 8th Floor </a>
+    <a href="#ninth" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-flask"> </i> 9th Floor </a>
+    <a href="#tenth" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-pencil"> </i> 10th Floor </a>
+
+  </a>
+  </div> <br/>
+
+
+  <!-- Navbar -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#first" class="w3-bar-item w3-button" onclick="toggleFunction()"> 1st Floor </a>
+    <a href="#second" class="w3-bar-item w3-button" onclick="toggleFunction()"> 2nd Floor </a>
+    <a href="#third" class="w3-bar-item w3-button" onclick="toggleFunction()"> 3rd Floor </a>
+    <a href="#fourth" class="w3-bar-item w3-button" onclick="toggleFunction()"> 4th Floor </a>
+    <a href="#fifth" class="w3-bar-item w3-button" onclick="toggleFunction()"> 5th Floor </a>
+    <a href="sixth" class="w3-bar-item w3-button" onclick="toggleFunction()"> 6th Floor </a>
+    <a href="#seventh" class="w3-bar-item w3-button" onclick="toggleFunction()"> 7th Floor </a>
+    <a href="#eigth" class="w3-bar-item w3-button" onclick="toggleFunction()"> 8th Floor </a>
+    <a href="#ninth" class="w3-bar-item w3-button" onclick="toggleFunction()"> 9th Floor </a>
+    <a href="#tenth" class="w3-bar-item w3-button" onclick="toggleFunction()"> Tenth Floor </a>
+
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> STUYVESANT <span class="w3-hide-small"> REAL </span> ESTATE </span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="me">
+  <h3 class="w3-center"> Stuy Real Estate  </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+ </h3>
+  <p> Just married? No house? Tired of your old apartment? Well look no further! Stuyvesant HS offers a variety of rooms, ranging from an all water exhibitory to a 10th floor art bonanza. Here at Stuy HS, you'll see students crying over their 105's and teachers spying in the bathroom for juuling kids. There is a total of 10 floors, each with its very own theme. We guarantee you that here, your kids will grow up to be super unathletic. We hope you come by!
+    </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i> The Managers </b></p><br>
+      <img src="Yousef&Mike.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Y&M" width="500" height="333">
+    </div>
+
+
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p> On the left, you could peep the managers of Stuy HS. The first is Yousef Amin. A tall Egyptian pharaoh raised in the warmest climest, he was taught how to cook scrambled eggs. He represents the minority at Stuy and makes sure their rights don't get violated! The other is Michael Nath. A big Indian raised in the farms, he was taught to cook curry with a blindfold on. He represents the majority of Stuy and makes sure they are fed well.  </p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16"> How I spend my free time: </p>
+  <p class="w3-wide"><i class="fa fa-futbol-o"></i> Sports (Soccer) </p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:60%">60%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-gamepad"></i> Games (Fortnite)</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:25%">25%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-spoon"></i> Eating </p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:15%">15%</div>
+  </div>
+</div>
+
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">Soccer </span>
+  </div>
+</div>
+
+
+
+<br/>
+<br/>
+
+
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+</div>
+</div>
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide"> Fortnite </span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="fortnite">
+  <h3 class="w3-center"> I'm kind of a beast at Fornite</h3>
+  <p class="w3-center"><em> I started playing Fornite last summer. At first, I didn't really understand what the hype was all about, but as I played it more, it became more fun.
+  Winning was addicting and playing with friends made the game even better. Since school started, I haven't been playing as much, but hopefully Fortnite won't die out soon. That being said,
+here are my stats. </em></p><br>
+
+  <img src="stats.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="I've played over 6,000 matches and grabbed over 300 wins. Not too shabby if I were to say so for myself.  ">
+
+  <p> <center> So out of the 8.3 million people that play Fortnite, I'm top 200,000! </center> </p>
+
+  <!-- Fourth Parallax Image with Portfolio Text -->
+  </div>
+  </div>
+  <div class="bgimg-4 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide"> Arcade Games </span>
+    </div>
+  </div>
+
+  <div class="w3-content w3-container w3-padding-64" id="snake">
+    <h3 class="w3-center"> Snake </h3>
+    <p class="w3-center"><em> Growing up, I loved to play arcade games! I enjoyed all arcades, such as Chuck E. Cheese's and Dave & Buster's. Now as I'm growing older, I'm able to make these games,
+      courtesy of Mr. Brooks' teaching. So totally without the help of my brother and Google, I present to you Snake:
+
+
+
+<br/> <br/>
+
+<center> <form action="https://lisa.stuy.edu/~yamin10/Snake.html" target="_blank">
+        <button type="submit"> Play Snake </button>
+     </form> </center>
+
+
+
+ </em></p><br>
+
+</div>
+</div>
+<div class="bgimg-5 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-black w3-wide"> Youtube </span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="fame">
+  <h3 class="w3-center"> Youtube </h3>
+  <p class="w3-center"><em> I've always wanted to be famous in some way; whether from a viral video, a world record, or from being a pro athlete. Last year, my wish got fulfilled, as I had a short
+    cameo in a youtube video by BKJ. Honestly, that dude is really creepy and I don't recommend you to subscribe, but ya boi is in one of his videos! Without further ado, I present to you
+    this masterpiece: <br/>
+    Christian and I are at 1:48!! <br/> <br/>
+
+<center> <iframe width="900" height=480" src="https://www.youtube.com/embed/SXHzsgUyyso" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe> </center>
+
+  <br/> <p> <center> Yeah, that was a pretty weird question, but at least I'm famous!!! </center> </p>
+
+
+
+
+
+<script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+var x = document.getElementById("myAudio");
+
+function playAudio() {
+  x.play();
+}
+
+function pauseAudio() {
+  x.pause();
+}
+
+</script>
+
+
+</body>
+</html>
