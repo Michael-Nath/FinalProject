@@ -42,7 +42,8 @@ def main():
     print("<html>")
     if true_answers == []:
         for key, value in empty.items():
-            print(key, value, "<br>")
+            print(key, "<img src='%s' alt='Smiley face' height='250px' width='250px'> <br>" % (value[-1]))
+            #print(key, value, "<br>")
     else:
         def helper(List, answer):
             for key, value in empty.items():
@@ -66,7 +67,8 @@ def main():
     if intersected == [] and true_answers != []:
         print("You are either highly unrealistic or terribily realistic... Please go back and refine your filters. ")
     else:
-        print(intersected)
+        for i in intersected:
+            print("<img src='%s' alt='Smiley face' height='42' width='42'>" % (i[1][-1]))
     print("</html")
 
 
