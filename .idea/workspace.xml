@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fcd1522c-1491-4605-bea2-d74725f9682a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Sheet1.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bulk.py" beforeDir="false" afterPath="$PROJECT_DIR$/bulk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house.html" beforeDir="false" afterPath="$PROJECT_DIR$/house.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,17 +17,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/house.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+            <state relative-caret-position="189">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="103" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bulk.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="979">
+              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="103" selection-start-line="6" selection-start-column="103" selection-end-line="6" selection-end-column="103" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bulk.py">
+        <entry file="file://$PROJECT_DIR$/results.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+            <state relative-caret-position="189">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -42,16 +60,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/realstyle.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="635">
-              <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+        <entry file="file://$PROJECT_DIR$/Sheet1.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sheet1.csv">
           <provider editor-type-id="csv-table-editor">
             <state showInfoPanel="false" fixedHeaders="false" rowLines="10">
               <column index="0" width="100" />
@@ -61,20 +75,6 @@
               <column index="4" width="100" />
               <column index="5" width="100" />
               <column index="6" width="100" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/selectric.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1008">
-              <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -100,19 +100,21 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/base.html" />
-        <option value="$PROJECT_DIR$/Sheet1.csv" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/real_estate.html" />
         <option value="$PROJECT_DIR$/selectric.css" />
         <option value="$PROJECT_DIR$/realstyle.css" />
         <option value="$PROJECT_DIR$/house.html" />
+        <option value="$PROJECT_DIR$/Sheet1.csv" />
+        <option value="$PROJECT_DIR$/results.html" />
         <option value="$PROJECT_DIR$/bulk.py" />
+        <option value="$PROJECT_DIR$/results.css" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-35" />
-    <option name="y" value="128" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="816" />
   </component>
@@ -180,7 +182,13 @@
       <workItem from="1559139108568" duration="1714000" />
       <workItem from="1559234876380" duration="1374000" />
       <workItem from="1559245532694" duration="828000" />
-      <workItem from="1559339009215" duration="2167000" />
+      <workItem from="1559339009215" duration="10016000" />
+      <workItem from="1559407244415" duration="918000" />
+      <workItem from="1559523928581" duration="611000" />
+      <workItem from="1559581819577" duration="1301000" />
+      <workItem from="1559653377522" duration="2041000" />
+      <workItem from="1559691625630" duration="2107000" />
+      <workItem from="1559694562193" duration="1071000" />
     </task>
     <task id="LOCAL-00001" summary="Test Commit">
       <created>1558783770691</created>
@@ -280,17 +288,38 @@
       <option name="project" value="LOCAL" />
       <updated>1558970336736</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Commit before I made big error">
+      <created>1559345316512</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1559345316512</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Changed some stuff">
+      <created>1559524052847</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1559524052847</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Added images to the results page. Next objective is to preview features.">
+      <created>1559654315359</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1559654315359</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26480000" />
+    <option name="totallyTimeSpent" value="42378000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-35" y="128" width="1440" height="816" extended-state="0" />
+    <frame x="1" y="23" width="1440" height="816" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2739628" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2539342" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -306,7 +335,7 @@
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3300562" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="13" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32872927" />
       <window_info active="true" anchor="bottom" id="Messages" order="14" visible="true" weight="0.33050847" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -329,7 +358,10 @@
     <MESSAGE value="Updated the landing site" />
     <MESSAGE value="Updated the Input Page. Actually doesn't look Paleolithic now." />
     <MESSAGE value="Added &quot;Any&quot; option in inputs as well as a price slider" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added &quot;Any&quot; option in inputs as well as a price slider" />
+    <MESSAGE value="Commit before I made big error" />
+    <MESSAGE value="Changed some stuff" />
+    <MESSAGE value="Added images to the results page. Next objective is to preview features." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added images to the results page. Next objective is to preview features." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/RealEstate.csv" />
@@ -353,7 +385,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/realstyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-184">
+          <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/real_estate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Sheet1.csv">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+        </state>
+      </provider>
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="false" fixedHeaders="false" rowLines="10">
           <column index="0" width="100" />
@@ -365,38 +424,25 @@
           <column index="6" width="100" />
         </state>
       </provider>
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-        </state>
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/realstyle.css">
+    <entry file="file://$PROJECT_DIR$/results.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/real_estate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        <state relative-caret-position="126">
+          <caret line="6" column="103" selection-start-line="6" selection-start-column="103" selection-end-line="6" selection-end-column="103" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bulk.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        <state relative-caret-position="979">
+          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>

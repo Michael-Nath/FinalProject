@@ -30,6 +30,7 @@ def main():
     answers = [form.getvalue("Locations"), form.getvalue("Type"), form.getvalue("Beds"), form.getvalue("Baths")]
     anys = []
     true_answers = []
+    results = open("results.html", "r").read()
     for i in range(len(answers)):
         anys.append(answers[i] if answers[i] == "Any" else true_answers.append(answers[i]))
 
@@ -42,8 +43,8 @@ def main():
     print("<html>")
     if true_answers == []:
         for key, value in empty.items():
-            print(key, "<img src='%s' alt='Smiley face' height='250px' width='250px'> <br>" % (value[-1]))
-            #print(key, value, "<br>")
+            results += "<div class='grid-item'>" + key +  " <img src='%s' alt='Smiley face' height='250px' width='300px'> <br> </div>" % (value[-1])
+        results += "</div> </body> </html>"
     else:
         def helper(List, answer):
             for key, value in empty.items():
@@ -68,9 +69,10 @@ def main():
         print("You are either highly unrealistic or terribily realistic... Please go back and refine your filters. ")
     else:
         for i in intersected:
-            print("<img src='%s' alt='Smiley face' height='42' width='42'>" % (i[1][-1]))
-    print("</html")
+            results += "<div class='grid-item'> " + i[0] + " <br> <img src='%s' alt='Smiley face' height='250px' width='300px'> <br>" % (i[1][-1]) + " Location: %s <br> Price: %s <br> Type: %s <br> Beds: %s <br> Baths: %s <br> SQFT: %s" % (i[1][0], i[1][1], i[1][2], i[1][3], i[1][4], i[1][5]) + " <br> <br> </div>"
+        results += "</div> </body> </html>"
 
+    print(results)
 
 if form.getvalue("Press_me") == "Test":
     main()
