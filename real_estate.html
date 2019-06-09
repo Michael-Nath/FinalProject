@@ -12,22 +12,24 @@
 <body id="body">
 <div id="blank">
 <div id="main">
-  <h1> Knockoff Trulia: </h1>
+  <h1> <u>Housing For All:</u> </h1>
   <h2> By Michael Nath and Yousef Amin </h2>
   <h3> Intro CS ll </h3>
   <div id="button">
-  <button class="buttons hvr-back-pulse"> Real Estate Page </button>
-  <button class="buttons hvr-back-pulse"> Neighborhood Statistics </button>
-  <button class="buttons hvr-back-pulse"> StUy ReAL EsTaTe </button>
+  <button class="button1 hvr-back-pulse"> Real Estate Page </button>
+  <button class="button2 hvr-back-pulse"> StUyVeSaNt ReAl EsTaTe </button>
   </div>
 </div>
 </div>
 <script>
   $(function () {
-    $(".buttons").on("click", function() {
-      window.open(
-              "https://lisa.stuy.edu/~mnath10/house.html",
-              '_blank');
+    $(".button1").on("click", function () {
+      window.open("https://lisa.stuy.edu/~mnath10/house.html");
+    })
+  })
+  $(function () {
+    $(".button2").on("click", function() {
+      window.open("https://lisa.stuy.edu/~yamin10/stuyrealestate.html");
     })
   })
 </script>

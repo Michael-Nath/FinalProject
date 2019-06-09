@@ -10,11 +10,14 @@
     <link href="https://fonts.googleapis.com/css?family=Coiny|Josefin+Sans|Open+Sans" rel="stylesheet">
 </head>
 <body>
+
 <form method="get" action="bulk.py">
+    <p>Note: Choosing multiple subfilters within a filter with "Any" as one of those subfilters will make the effect of "Any" go away. If you want all subfilters of a filter, make sure that filter has ONLY "Any". </p>
     <div id="Locations">
         <h2> Location </h2>
-        <select name="Locations" multiple size="12">
-            <option selected>Any</option>
+        <select name="Locations" multiple size="13">
+            <option value="" disabled selected>Select your option</option>
+            <option>Any</option>
             <option>Bayside</option>
             <option>Upper East Side</option>
             <option>Tribeca</option>
@@ -31,8 +34,9 @@
 
     <div id="Type">
         <h2>House Types</h2>
-        <select name="Type" multiple size="6">
-            <option selected>Any</option>
+        <select name="Type" multiple size="7">
+            <option value="" disabled selected>Select your option</option>
+            <option>Any</option>
             <option>Apartment</option>
             <option>Condo</option>
             <option>Coop</option>
@@ -43,8 +47,9 @@
 
     <div id="Beds">
         <h2>Beds</h2>
-        <select name="Beds" multiple size="8">
-            <option selected>Any</option>
+        <select name="Beds" multiple size="9">
+            <option value="" disabled selected>Select your option</option>
+            <option>Any</option>
             <option>1</option>
             <option>2</option>
             <option>3</option>
@@ -57,8 +62,9 @@
 
     <div id="Baths">
         <h2> Baths </h2>
-        <select name="Baths" multiple size="15">
-            <option selected>Any</option>
+        <select name="Baths" multiple size="16">
+            <option value="" disabled selected>Select your option</option>
+            <option>Any</option>
             <option>1</option>
             <option>2</option>
             <option>3</option>
@@ -77,15 +83,9 @@
 
     </div>
 
-    <!-- <div class="slidecontainer">
-        <input name="PriceRange" type="range" min="2000" max="29950000" class="slider" id="myRange" step="50">
-    </div>
-
-    <p> Current Price: <span id="Price"></span></p> -->
-
 
     <div id="SUBMIT">
-    <input name="Press_me" type="submit" value="Test">
+    <input name="Press_me" type="submit" value="Search!">
     </div>
 </form>
 
@@ -94,14 +94,6 @@
         $('select').selectric();
     });
 
-    var slider = document.getElementById("myRange");
-    var output = document.getElementById("Price");
-    output.innerHTML = slider.value; // Display the default slider value
-
-    // Update the current slider value (each time you drag the slider handle)
-    slider.oninput = function() {
-        output.innerHTML = this.value;
-    }
 </script>
 </body>
 </html>

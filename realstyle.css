@@ -1,4 +1,4 @@
-.buttons {
+button {
   color: palevioletred;
   font-size: 36px;
   font-family: "Coiny";
@@ -9,7 +9,10 @@ select {
   font-size: 12px;
 }
 #body {
-  background-image: url('house.gif'); background-repeat:repeat;
+  background-image: url('simpson.gif');
+  background-position: center;
+  background-size: cover;
+
 }
 #main {
   background-color: #3b5e92;
@@ -48,10 +51,13 @@ input[type=submit] {
   }
 
 
-h2 {
+h2,p{
   font-family: Coiny;
 }
 
+p {
+  border: 2px solid black;
+}
 /* The following code is taken from W3Schools tutorial on how to create a slider.
 We have modified some of the code to our liking.
  */
