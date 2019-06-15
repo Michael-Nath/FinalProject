@@ -1,4 +1,5 @@
 #! /usr/bin/python3
+# all python code is possible because of Michael Nath
 import cgi
 import cgitb
 

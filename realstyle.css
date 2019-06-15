@@ -8,11 +8,8 @@ select {
   text-align: center;
   font-size: 12px;
 }
-#body {
-  background-image: url('simpson.gif');
-  background-position: center;
-  background-size: cover;
-
+#body{
+  background-image: url('meme.gif');
 }
 #main {
   background-color: #3b5e92;

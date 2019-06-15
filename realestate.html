@@ -1,0 +1,408 @@
+<html>
+
+<link rel="shortcut icon" href="http://pngimg.com/uploads/building/building_PNG25.png" />
+<title> Stuyvesant Real Estate </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: black;
+  line-height: 1.8;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9, .bgimg-10, .bgimg-11 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image  */
+.bgimg-1 {
+  background-image: url("https://fortunedotcom.files.wordpress.com/2017/10/460498148.jpg");
+  min-height: 100%;
+}
+
+/* Second image */
+.bgimg-2 {
+  background-image: url("https://stuy.enschool.org/rotating_images/4562/4562_0_1400_0_0.jpg");
+  min-height: 400px;
+}
+
+/* Third image  */
+.bgimg-3 {
+  background-image: url("2ndfloor.jpg");
+  min-height: 400px;
+}
+
+/* Fourth image  */
+.bgimg-4 {
+  background-image: url("3rdfloor.jpg");
+  min-height: 400px;
+}
+
+/* Fifth image  */
+.bgimg-5 {
+  background-image: url("4thfloor.jpg");
+  min-height: 400px;
+}
+
+.bgimg-6 {
+  background-image: url("5thfloor.jpg");
+  min-height: 400px;
+}
+
+.bgimg-7 {
+  background-image: url("https://milderoffice.com/wp-content/uploads/2015/10/stuyvesant_hs_2013-4web-3000p-1500x1000.jpg");
+  min-height: 400px;
+}
+
+.bgimg-8 {
+  background-image: url("7thfloor1.jpg");
+  min-height: 400px;
+}
+
+.bgimg-9 {
+  background-image: url("8thfloor3.jpg");
+  min-height: 400px;
+}
+
+.bgimg-10 {
+  background-image: url("9thfloor1.jpg");
+  min-height: 400px;
+}
+
+.bgimg-11 {
+  background-image: url("10thfloor4.jpg");
+  min-height: 400px;
+}
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+</style>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button"> Home </a>
+    <a href="#first" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-tint"> </i> 1st Floor </a>
+    <a href="#second" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-picture-o"> </i> 2nd Floor </a>
+    <a href="#third" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-futbol-o"> </i> 3rd Floor </a>
+    <a href="#fourth" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-line-chart"> </i> 4th Floor </a>
+    <a href="#fifth" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-cutlery"> </i> 5th Floor </a>
+    <a href="#sixth" class="w3-bar-item w3-button 3-hide-small"><i class="fa fa-book"> </i> 6th Floor </a>
+    <a href="#seventh" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-eyedropper"> </i> 7th Floor </a>
+    <a href="#eigth" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-thermometer"> </i> 8th Floor </a>
+    <a href="#ninth" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-flask"> </i> 9th Floor </a>
+    <a href="#tenth" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-pencil"> </i> 10th Floor </a>
+
+  </a>
+  </div> <br/>
+
+
+  <!-- Navbar -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()"> Home </a>
+    <a href="#first" class="w3-bar-item w3-button" onclick="toggleFunction()"> 1st Floor </a>
+    <a href="#second" class="w3-bar-item w3-button" onclick="toggleFunction()"> 2nd Floor </a>
+    <a href="#third" class="w3-bar-item w3-button" onclick="toggleFunction()"> 3rd Floor </a>
+    <a href="#fourth" class="w3-bar-item w3-button" onclick="toggleFunction()"> 4th Floor </a>
+    <a href="#fifth" class="w3-bar-item w3-button" onclick="toggleFunction()"> 5th Floor </a>
+    <a href="sixth" class="w3-bar-item w3-button" onclick="toggleFunction()"> 6th Floor </a>
+    <a href="#seventh" class="w3-bar-item w3-button" onclick="toggleFunction()"> 7th Floor </a>
+    <a href="#eigth" class="w3-bar-item w3-button" onclick="toggleFunction()"> 8th Floor </a>
+    <a href="#ninth" class="w3-bar-item w3-button" onclick="toggleFunction()"> 9th Floor </a>
+    <a href="#tenth" class="w3-bar-item w3-button" onclick="toggleFunction()"> Tenth Floor </a>
+
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> STUYVESANT <span class="w3-hide-small"> REAL </span> ESTATE </span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="home">
+  <h3 class="w3-center"> Stuy Real Estate  </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+ </h3>
+  <p> Just married? No house? Tired of your old apartment? Well look no further! Stuyvesant HS offers a variety of rooms, ranging from an all water exhibitory to a 10th floor art bonanza. Here at Stuy HS, you'll see students crying over their 105's and teachers spying in the bathroom for juuling kids. There is a total of 10 floors, each with its very own theme. We guarantee you that here, your kids will grow up to be super unathletic. We hope you come by!
+    </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i> The Managers </b></p><br>
+      <img src="YousefMike.JPG" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Y&M" width="500" height="333">
+    </div>
+
+<br/> <br/> <br/> <br/>
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p> On the left, you could peep the managers of Stuy HS. The first is Yousef Amin. A tall Egyptian pharaoh raised in the warmest climest, he was taught how to cook scrambled eggs. He represents the minority at Stuy and makes sure their rights don't get violated! The other is Michael Nath. A big Indian raised in the farms, he was taught to cook curry with a blindfold on. He represents the majority of Stuy and makes sure they are fed well.  </p>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide"> 1st Floor </span>
+  </div>
+</div>
+<div class="w3-content w3-container w3-padding-64" id="first">
+  <h3 class="w3-center"> The Underwater Room </h3>
+  <p class="w3-center"><em> Have you ever wanted to live in an underwater chamber of piss and chlorine? Do you just not want to wear clothes? Well, the Stuy first floor is for you. We have a three thousand sq. ft. pool, split into 5 rooms. The rooms are separated by some long stick things, so there are lots of privacy. Even if you don't like the water, the first floor also has tons of music rooms. If you want to learn how to play <i> Old Time Road </i> or just break guitars, this is the place for you. We have unlimited instruments, and its unlimited peace. We're sure you'd love it! </em></p><br>
+  <center> <form method='get' action='photos.py'>
+    <input type='hidden' name='floor' value='floor1' id="floor">
+    <input type='submit' name='submit' value='View More'>
+  </form> </center>
+
+<br/>
+<br/>
+
+
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+</div>
+</div>
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide"> 2nd Floor </span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="second">
+  <h3 class="w3-center"> Senior Citizen Plaza </h3>
+  <p class="w3-center"><em> Since old people can't really go up stairs or broken escalators or even broken elevators, the second floor is dedicated to senior citizens. The senior citizens cluster around a bar, with chess tables. In their fre time, they play chess of course and drink Heineken Light. Anyway, this is the most expensive floor. Lockers cost around 17 cents and rooms are about 19 cents. This floor is also dedicated to robots, like Mr.Brooks. These robots handle the computer rooms and make computers do crazy things. #RobotApocalypse </em></p><br>
+
+  <center> <form method='get' action='photos.py'>
+    <input type='hidden' name='floor' value='floor2' id='floor2'>
+    <input type='submit' name='submit' value='View More'>
+  </form> </center>
+
+
+  <!-- Fourth Parallax Image with Portfolio Text -->
+  </div>
+  </div>
+  <div class="bgimg-4 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide"> 3rd Floor </span>
+    </div>
+  </div>
+
+  <div class="w3-content w3-container w3-padding-64" id="third">
+    <h3 class="w3-center"> A Stuy Kids's Worst Nightmare: THE GYM </h3>
+    <p class="w3-center"><em> On the third floor, you could find one of our two fitness floors. This floor consists of a gym with six basketball hoops and a cardio room. However, this floor is said to be haunted. According to legends, approximately 6,000 nerds have broken their glasses playing basketball in this gym. No wonder why the health clinic is right next to the gym! On this floor, you could also find a beautiful quilt. Made from the finest material, it was imported right from Panama. On this floor, you could also find the more political fellas. You could say they specialize in history and geography. Oh yeah, and this floor has literally the only escalator that works. So it'd be worth your money and energy to live on this floor!
+
+      <center> <form method='get' action='photos.py'>
+        <input type='hidden' name='floor' value='floor3' id='floor3'>
+        <input type='submit' name='submit' value='View More'>
+      </form> </center>
+
+ </em></p><br>
+
+</div>
+</div>
+<div class="bgimg-5 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide"> 4th Floor </span>
+  </div>
+</div>
+<div class="w3-content w3-container w3-padding-64" id="fourth">
+<h3 class="w3-center"> Why should you never talk to Pi? Because she'll go on and on forever.  </h3>
+<p class="w3-center"><em> I'm going to give you exactly 3.14159265897932384626433832795028841971 why you should live on this floor. Haha get it, because this floor is dedicated to math! As soon as you walk onto this floor, the smell of math hits you. Beautiful apple and pumpkin pi made from the finest math chef Mrs. Avigdor. Ok, I'll stop hehe. Another reason why you would love this floor is because you'll be surrounded by very intelligent neighbors. They'll be able to help you do some quick maths and help you bake some mathematical pi with those exact measurements. Ok, I'll actually stop now. So it turns out I can't think of 3.14159265897932384626433832795028841971 reasons but only 2. If you really like good smells though, this is the floor for you! </p>
+
+  <center> <form method='get' action='photos.py'>
+    <input type='hidden' name='floor' value='floor4' id='floor4'>
+    <input type='submit' name='submit' value='View More'>
+  </form> </center>
+
+</div>
+</div>
+<div class="bgimg-6 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide"> 5th Floor </span>
+  </div>
+</div>
+<div class="w3-content w3-container w3-padding-64" id="fifth">
+  <h3 class="w3-center"> FOOOOOOOOOOOOD </h3>
+  <p class="w3-center"><em> Are you fat? Do you like food? Do you like drinks? Well, this is the place for you! The Stuy 5th floor includes a beautiful cafeteria crafted by Leonardo da Vinci. Here at the Stuy Cafeteria, we serve frozen rat patties with french fries. No kidding they have mustaches. We also serve pizza, but not really pizza. It's kinda frozen and has weird toppings, but still tastes good! The ladies who serve the food are actually extremely nice though and serve you extras if you ask! Also on this floor, you could find the language department. Spanish, French, German, and Latin to be exact. Latin is dead just like our real estate, so please come try this floor out!</em></p><br>
+
+  <center> <form method='get' action='name of python file'>
+    <input type='hidden' name='floor' value='floor5' id='floor5'>
+    <input type='submit' name='submit' value='View More'>
+  </form> </center>
+
+</div>
+</div>
+<div class="bgimg-7 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-black w3-wide"> 6th Floor </span>
+  </div>
+</div>
+<div class="w3-content w3-container w3-padding-64" id="sixth">
+  <h3 class="w3-center"> Does anybody even read books anymore? </h3>
+  <p class="w3-center"><em> Ernest Hemingway, Mark Twain, William Shakespeare, Charles Dickens; the number of great writers is endless. Too bad Stuy students don't read and use online references *wink* *wink*. Anyways, if you are an old chap who does like to read, this is the floor for you. This floor features our one of a kind library, with over 7 million books and brand new computers. The neighbors on this floor are extremely friendly, as they normally have tea parties. And to burn those tea calories, after they play in our gym. The gym features 6 basketball courts and a handball court! The fun is everlasting. If you want to drink tea and shoot some hoops, this is the place for you!</em></p><br>
+
+  <center> <form method='get' action='photos.py'>
+    <input type='hidden' name='floor' value='floor6' id='floor6'>
+    <input type='submit' name='submit' value='View More'>
+  </form> </center>
+
+</div>
+</div>
+<div class="bgimg-8 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-black w3-wide"> 7th Floor </span>
+  </div>
+</div>
+<div class="w3-content w3-container w3-padding-64" id="seventh">
+  <h3 class="w3-center"> Biologists take CELLfies </h3>
+  <p class="w3-center"><em> Do you want to know how babies are made? Well, if you're trying to find a place to stay, you should know how babies are made. Well, do you want to learn about your body and how it works? Look no further! The 7th floor in Stuy is dedicated to those who have a profound interest in biolody. Residents on this floor include Charles Darwin, Gregor Mendel, and Rachel Carson. Yeah they're posters, but you feel the intelligence emitted from them. The biology floor also features labs, so you could experiment on yourself and turn yourself into the Hulk maybe. I heard Marvel were looking for a new actor! </em></p><br>
+
+  <center> <form method='get' action='photos.py'>
+    <input type='hidden' name='floor' value='floor7' id='floor7'>
+    <input type='submit' name='submit' value='View More'>
+  </form> </center>
+
+</div>
+</div>
+<div class="bgimg-9 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-black w3-wide"> 8th Floor </span>
+  </div>
+</div>
+<div class="w3-content w3-container w3-padding-64" id="eigth">
+  <h3 class="w3-center"> Albert Einstein's Quantum Realm </h3>
+  <p class="w3-center"><em> Physics! The natural science that studies matter, its motion, and behavior through space and time, and that studies the related entities of energy and force. The science with a million formulas for success! On this floor, you'll be surrounded by numerous celebrities. Some include Albert Einstein, and that's about it. Since 1930, Einstein has locked himself in his dorm. He says he's working on a new formula, sow e really don't know if he's dead. That shouldn't stop you from purchasing a room on this floor, though, because physics is awesome. Learn about relativity, time, and space. Maybe make the floor zero gravity for fun! It's all yours once it's purchased.</em></p><br>
+
+  <center> <form method='get' action='photos.py'>
+    <input type='hidden' name='floor' value='floor8' id='floor8'>
+    <input type='submit' name='submit' value='View More'>
+  </form> </center>
+
+</div>
+</div>
+<div class="bgimg-10 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-black w3-wide"> 9th Floor </span>
+  </div>
+</div>
+<div class="w3-content w3-container w3-padding-64" id="ninth">
+  <h3 class="w3-center"> What superhero is three sodium atoms? NaNaNa BATMANNN!!</h3>
+  <p class="w3-center"><em> There's 104 days of summer vacation and 118 elements on the periodic table. There really isn't a correlation there, but the chemistry floor in Stuyvesant is amazing. To start off, the view from this floor is amazing. You can practically see the water and some buildings, but not really! Also on this floor are labs. In these labs, you could find many chemicals that could kill you. That calls for a drinking night with the boys, am I right *wink*. Honestly, we wouldn't recommend you living on this floor. It's too high up and in case of a fire, you have to jump down 9 floors to safety. However, if you want to be Super,man, this is the floor for you!</em></p><br>
+
+  <center> <form method='get' action='photos.py'>
+    <input type='hidden' name='floor' value='floor9' id='floor9'>
+    <input type='submit' name='submit' value='View More'>
+  </form> </center>
+
+</div>
+</div>
+<div class="bgimg-11 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-black w3-wide"> 10th Floor </span>
+  </div>
+</div>
+<div class="w3-content w3-container w3-padding-64" id="tenth">
+  <h3 class="w3-center"> Leonardo Da Vinci's Studio </h3>
+  <p class="w3-center"><em> At the highest point in Stuyvesant, the 10th floor houses beautiful pieces of art from greats such as Leonardo da Vinci, Michaelangelo, Raphael, and Donatello. Yea I might've just named the Ninja Turtles, but they're also famous artists. This floor has an amazing view, comparable to the 10th floor of the World Trade Center. This floor is perfect for you if you have an interest in beauty. The artwork is truly spectacular and is one of a kind. Additionally, this floor also hosts a computer lab. So, if you want to take some time off art and play some CoolMathGames, go for it!</em></p><br>
+
+  <center> <form method='get' action='photos.py'>
+    <input type='hidden' name='floor' value='floor10' id='floor10'>
+    <input type='submit' name='submit' value='View More'>
+  </form> </center>
+
+
+
+
+
+
+<script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+var x = document.getElementById("myAudio");
+
+function playAudio() {
+  x.play();
+}
+
+function pauseAudio() {
+  x.pause();
+}
+
+</script>
+
+
+</body>
+</html>
